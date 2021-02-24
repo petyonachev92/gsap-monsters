@@ -9,14 +9,14 @@ export default class Monster extends EventEmitter {
     }
 
     expand() {
-        gsap.to(`#monster${this.id}`, {width: "80%", duration: 0.5, id: expand})
+        gsap.to(`#monster${this.id}`, {width: "80%", duration: 0.5})
     }
 
     contract() {
-        gsap.to(`#monster${this.id}`, {width: "4%", duration: 0.5, id: contract})
+        gsap.to(`#monster${this.id}`, {width: "4%", duration: 0.5})
     }
 
     reset() {
-        gsap.to(`#monster${this.id}`, {width: "16.6%", duration: 0.5, id: reset})
+        gsap.to(`#monster${this.id}`, {width: "16.6%", duration: 0.5})
     }
 }
