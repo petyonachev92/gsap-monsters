@@ -24,8 +24,7 @@ export default class Animation {
         this.monsters.forEach(monster => {
             monster.ref.addEventListener("mouseenter", () => monster.expand())
             monster.ref.addEventListener("mouseleave", () => monster.contract())
-            document.querySelector("#container").addEventListener("mouseleave", () => monster.reset())
-            document.querySelector("#container").addEventListener("mouseenter", () => monster.contract())
+            monster.ref.addEventListener("mouseleave", () => monster.reset())
         });
                 
     }
